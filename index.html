@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberCheck | Security Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🛡️ CyberCheck</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#password">Password Check</a>
+        <a href="#url">URL Scanner</a>
+        <a href="#tips">Security Tips</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="tag">PERSONAL CYBERSECURITY ASSISTANT</p>
+        <h1>Stay Safe in the <span>Digital World.</span></h1>
+        <p>Check password strength, identify suspicious URLs
+           and improve your online security awareness.</p>
+        <a href="#password" class="main-btn">Start Security Check →</a>
+    </div>
+    <div class="shield">🛡️</div>
+</section>
+
+<section class="stats">
+    <div class="stat-card">
+        <h2>01</h2>
+        <p>Password Analysis</p>
+    </div>
+    <div class="stat-card">
+        <h2>02</h2>
+        <p>URL Risk Analysis</p>
+    </div>
+    <div class="stat-card">
+        <h2>03</h2>
+        <p>Security Awareness</p>
+    </div>
+</section>
+
+<section class="section" id="password">
+    <div class="section-heading">
+        <p class="tag">PASSWORD SECURITY</p>
+        <h2>Password Strength Checker</h2>
+        <p>Check how strong your password is.</p>
+    </div>
+
+    <div class="tool-card">
+        <label for="passwordInput">Enter a test password</label>
+        <div class="input-row">
+            <input type="password" id="passwordInput"
+                   placeholder="Enter your password">
+            <button id="togglePassword" type="button">Show</button>
+        </div>
+
+        <div class="strength-track">
+            <div id="strengthBar"></div>
+        </div>
+
+        <h3 id="strengthText">Waiting for password...</h3>
+        <ul id="passwordChecks">
+            <li data-check="length">At least 8 characters</li>
+            <li data-check="upper">Uppercase letter</li>
+            <li data-check="lower">Lowercase letter</li>
+            <li data-check="number">Number</li>
+            <li data-check="special">Special character</li>
+        </ul>
+        <p class="notice">Privacy: Password analysis happens locally in your browser. Do not enter a real or reused password.</p>
+    </div>
+</section>
+
+<section class="section alternate" id="url">
+    <div class="section-heading">
+        <p class="tag">LINK SECURITY</p>
+        <h2>Suspicious URL Detector</h2>
+        <p>Analyze a URL for common phishing warning signs.</p>
+    </div>
+
+    <div class="tool-card">
+        <label for="urlInput">Enter website URL</label>
+        <input type="text" id="urlInput"
+               placeholder="https://example.com">
+
+        <button class="main-btn full-btn" id="scanBtn">
+            Analyze URL →
+        </button>
+
+        <div id="urlResult" class="result hidden">
+            <h3 id="urlStatus"></h3>
+            <p id="urlDescription"></p>
+            <ul id="urlFindings"></ul>
+        </div>
+
+        <p class="notice">This is a basic heuristic checker, not a live malware or phishing database. A safe result does not guarantee a website is trustworthy.</p>
+    </div>
+</section>
+
+<section class="section" id="tips">
+    <div class="section-heading">
+        <p class="tag">STAY PROTECTED</p>
+        <h2>Cybersecurity Tips</h2>
+        <p>Simple habits to protect yourself online.</p>
+    </div>
+
+    <div class="tips-grid">
+        <div class="tip-card">
+            <span>🔑</span>
+            <h3>Strong Passwords</h3>
+            <p>Use long, unique passwords for every account.</p>
+        </div>
+
+        <div class="tip-card">
+            <span>🎣</span>
+            <h3>Avoid Phishing</h3>
+            <p>Never click suspicious links or unknown attachments.</p>
+        </div>
+
+        <div class="tip-card">
+            <span>🔐</span>
+            <h3>Enable 2FA</h3>
+            <p>Use two-factor authentication wherever possible.</p>
+        </div>
+
+        <div class="tip-card">
+            <span>🔄</span>
+            <h3>Update Software</h3>
+            <p>Keep your operating system and applications updated.</p>
+        </div>
+
+        <div class="tip-card">
+            <span>📶</span>
+            <h3>Secure Wi-Fi</h3>
+            <p>Avoid sensitive transactions on untrusted networks.</p>
+        </div>
+
+        <div class="tip-card">
+            <span>🕵️</span>
+            <h3>Protect Privacy</h3>
+            <p>Do not share personal information with unknown websites.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <h3>🛡️ CyberCheck</h3>
+    <p>Building a safer digital world, one check at a time.</p>
+    <p>© 2026 CyberCheck | Educational Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
